@@ -4,7 +4,7 @@ DemoBundle
 [![Build Status](https://secure.travis-ci.org/jakzal/DemoBundle.png?branch=master)](http://travis-ci.org/jakzal/DemoBundle)
 
 DemoBundle demonstrates how to run Behat scenarios and Symfony functional tests 
-without a need of installing bundle in a project.
+without installing the bundle in a project.
 
 To try it yourself clone a repository
 
