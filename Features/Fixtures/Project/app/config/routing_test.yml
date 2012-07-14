@@ -1,0 +1,4 @@
+acme_demo:
+    resource: "@ZalasDemoBundle/Controller/"
+    type:     annotation
+    prefix:   /

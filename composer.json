@@ -1,0 +1,20 @@
+{
+    "name": "acme/demo-bundle",
+    "type": "symfony-bundle",
+    "description": "Demo bundle",
+    "license": "MIT",
+    "require": {
+        "php":                           ">=5.3.3",
+        "symfony/symfony":               "*@stable",
+        "sensio/framework-extra-bundle": "*@dev"
+    },
+    "require-dev": {
+        "behat/behat":                  "*@stable",
+        "behat/symfony2-extension":     "*@stable",
+        "behat/mink-extension":         "*",
+        "behat/mink-browserkit-driver": "*"
+    },
+    "autoload": {
+        "psr-0": { "Zalas\\Bundle\\DemoBundle": "" }
+    }
+}
