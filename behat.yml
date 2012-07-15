@@ -13,7 +13,7 @@ default:
         env: test
         debug: true
         path: Features/Fixtures/Project/app/AppKernel.php
-        bootstrap: Features/Fixtures/Project/app/autoload.php
+        bootstrap: Features/Fixtures/Project/app/bootstrap.php
     Behat\MinkExtension\Extension:
       base_url: 'http://www.acme.dev/app_test.php/'
       default_session: symfony2
