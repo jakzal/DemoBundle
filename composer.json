@@ -17,5 +17,5 @@
     "autoload": {
         "psr-0": { "Zalas\\Bundle\\DemoBundle": "" }
     },
-    "target-dir": "Jakzal/Bundle/DemoBundle"
+    "target-dir": "Zalas/Bundle/DemoBundle"
 }
