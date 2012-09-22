@@ -12,7 +12,8 @@
         "behat/behat":                  "*@stable",
         "behat/symfony2-extension":     "*@stable",
         "behat/mink-extension":         "*",
-        "behat/mink-browserkit-driver": "*"
+        "behat/mink-browserkit-driver": "*",
+        "symfony/monolog-bundle":       "*@stable"
     },
     "autoload": {
         "psr-0": { "Zalas\\Bundle\\DemoBundle": "" }
