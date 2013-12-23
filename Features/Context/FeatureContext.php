@@ -4,8 +4,6 @@ namespace Zalas\Bundle\DemoBundle\Features\Context;
 
 use Behat\Behat\Context\Step\Then;
 use Behat\MinkExtension\Context\MinkContext;
-use Behat\Symfony2Extension\Context\KernelAwareInterface;
-use Symfony\Component\HttpKernel\KernelInterface;
 
 class FeatureContext extends MinkContext
 {
