@@ -6,8 +6,8 @@ php:
   - 5.5
 
 before_script:
-  - curl -s http://getcomposer.org/installer | php
-  - php composer.phar --dev install
+  - composer self-update
+  - composer install --prefer-dist
 
 script:
   - 'phpunit --coverage-text && ./vendor/bin/behat'
