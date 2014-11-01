@@ -5,18 +5,21 @@
     "license": "MIT",
     "require": {
         "php":                           ">=5.3.3",
-        "symfony/symfony":               "~2.1",
-        "sensio/framework-extra-bundle": "~2.1"
+        "symfony/framework-bundle":      "~2.1",
+        "sensio/framework-extra-bundle": "~2.1",
+        "symfony/twig-bundle":           "~2.1",
+        "symfony/form":                  "~2.1",
+        "symfony/validator":             "~2.1",
+        "symfony/finder":                "~2.1"
     },
     "require-dev": {
-        "behat/behat":                  "~2.4",
-        "behat/symfony2-extension":     "~1.0",
-        "behat/mink-extension":         "~1.0",
-        "behat/mink-browserkit-driver": "~1.0",
+        "behat/behat":                  "~3.0",
+        "behat/symfony2-extension":     "~2.0",
+        "behat/mink-extension":         "~2.0",
+        "behat/mink-browserkit-driver": "~1.2",
         "symfony/monolog-bundle":       "~2.1"
     },
     "autoload": {
-        "psr-0": { "Zalas\\Bundle\\DemoBundle": "" }
-    },
-    "target-dir": "Zalas/Bundle/DemoBundle"
+        "psr-4": { "Zalas\\Bundle\\DemoBundle\\": "" }
+    }
 }

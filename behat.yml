@@ -1,19 +1,20 @@
 default:
-  formatter:
-    name: progress
-  paths:
-    features: Features
-    bootstrap: %behat.paths.features%/Context
-  context:
-    class: Zalas\Bundle\DemoBundle\Features\Context\FeatureContext
+  suites:
+    demo:
+      formatter:
+        name: progress
+      paths:
+        features: Features
+      contexts: [Zalas\Bundle\DemoBundle\Features\Context\FeatureContext]
   extensions:
-    Behat\Symfony2Extension\Extension:
-      mink_driver: true
+    Behat\Symfony2Extension:
       kernel:
         env: test
         debug: true
         path: Features/Fixtures/Project/app/AppKernel.php
         bootstrap: Features/Fixtures/Project/app/bootstrap.php
-    Behat\MinkExtension\Extension:
+    Behat\MinkExtension:
       base_url: 'http://www.acme.dev/app_test.php/'
-      default_session: symfony2
+      sessions:
+        default:
+          symfony2: ~
