@@ -9,7 +9,8 @@
         "sensio/framework-extra-bundle": "~2.1",
         "symfony/twig-bundle":           "~2.1",
         "symfony/form":                  "~2.1",
-        "symfony/validator":             "~2.1"
+        "symfony/validator":             "~2.1",
+        "symfony/finder":                "~2.1"
     },
     "require-dev": {
         "behat/behat":                  "~3.0",
