@@ -3,6 +3,7 @@ default:
     demo:
       formatter:
         name: progress
+      paths:
         features: Features
       contexts: [Zalas\Bundle\DemoBundle\Features\Context\FeatureContext]
   extensions:
