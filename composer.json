@@ -4,7 +4,7 @@
     "description": "Demo bundle",
     "license": "MIT",
     "require": {
-        "php":                           ">=5.3.3",
+        "php":                           "^5.5||^7.0",
         "symfony/framework-bundle":      "~2.1",
         "sensio/framework-extra-bundle": "~2.1",
         "symfony/twig-bundle":           "~2.1",
