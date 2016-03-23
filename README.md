@@ -7,23 +7,32 @@ DemoBundle
 DemoBundle demonstrates how to run Behat scenarios and Symfony functional tests 
 without installing the bundle in a project.
 
-To try it yourself clone a repository
+To try it yourself clone the repository:
 
 ```bash
 git clone git@github.com:jakzal/DemoBundle.git
 cd DemoBundle
 ```
 
-and install the dependencies with composer:
+and install dependencies with composer:
 
 ```bash
-curl -s http://getcomposer.org/installer | php
-php composer.phar --dev install
+composer install
 ```
 
-Run the Behat scenarios and functional tests:
+Run Behat scenarios and functional tests:
 
 ```bash
 ./vendor/bin/behat
 phpunit
+```
+
+Using docker compose
+--------------------
+
+```bash
+docker-compose build
+docker-compose run --rm demo-bundle composer install
+docker-compose run --rm demo-bundle ./vendor/bin/behat
+docker-compose run --rm demo-bundle phpunit
 ```

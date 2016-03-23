@@ -1,0 +1,8 @@
+demo-bundle:
+  build: .
+  volumes:
+    - .:/demo-bundle
+    - ~/.composer/cache:/root/.composer/cache
+  working_dir: /demo-bundle
+  container_name: demo-bundle
+
