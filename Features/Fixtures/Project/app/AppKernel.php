@@ -57,7 +57,8 @@ class AppKernel extends Kernel
         $c->loadFromExtension('framework', [
             'secret' => 'my$ecret',
             'test' => null,
-            'templating' => ['engines' => ['twig']],
+            'templating' => false,
+            'assets' => false,
             'profiler' => [
                 'collect' => false,
             ],

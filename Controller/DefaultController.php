@@ -10,10 +10,9 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/hello/{name}", defaults={"name" = "stranger"})
-     * @Template()
      */
     public function indexAction($name)
     {
-        return array('name' => $name);
+        return $this->render('@ZalasDemo/Default/index.html.twig', array('name' => $name));
     }
 }
