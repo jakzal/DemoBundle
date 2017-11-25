@@ -24,7 +24,7 @@ Run Behat scenarios and functional tests:
 
 ```bash
 ./vendor/bin/behat
-phpunit
+./vendor/bin/phpunit
 ```
 
 Using docker compose
@@ -34,5 +34,5 @@ Using docker compose
 docker-compose build
 docker-compose run --rm demo-bundle composer install
 docker-compose run --rm demo-bundle ./vendor/bin/behat
-docker-compose run --rm demo-bundle phpunit
+docker-compose run --rm demo-bundle ./vendor/bin/phpunit
 ```

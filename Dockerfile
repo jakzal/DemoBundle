@@ -11,6 +11,5 @@ RUN echo "date.timezone=UTC" >> $PHP_INI_DIR/php.ini \
  && echo "error_reporting=E_ALL" >> $PHP_INI_DIR/php.ini
 
 RUN php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=/usr/local/bin --filename=composer
-RUN php -r "readfile('https://phar.phpunit.de/phpunit.phar');" > /usr/local/bin/phpunit && chmod +x /usr/local/bin/phpunit
 
 VOLUME ["/root/.composer/cache"]
