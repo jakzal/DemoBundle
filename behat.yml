@@ -3,16 +3,14 @@ default:
     progress: true
   suites:
     demo:
-      paths:
-        features: Features
       contexts: [Zalas\Bundle\DemoBundle\Features\Context\FeatureContext]
   extensions:
     Behat\Symfony2Extension:
       kernel:
         env: test
         debug: true
-        path: Features/Fixtures/Project/app/AppKernel.php
-        bootstrap: Features/Fixtures/Project/app/bootstrap.php
+        path: features/Fixtures/Project/app/AppKernel.php
+        bootstrap: vendor/autoload.php
     Behat\MinkExtension:
       base_url: 'http://www.acme.dev/app_test.php/'
       sessions:

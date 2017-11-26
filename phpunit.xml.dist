@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit bootstrap="./Tests/bootstrap.php" colors="true">
+<phpunit bootstrap="./tests/bootstrap.php" colors="true">
   <testsuites>
     <testsuite name="ZalasDemoBundle test suite">
-      <directory suffix="Test.php">./Tests</directory>
+      <directory suffix="Test.php">./tests</directory>
     </testsuite>
   </testsuites>
 
   <php>
-    <server name="KERNEL_DIR" value="./Tests/Functional/app" />
+    <server name="KERNEL_DIR" value="./tests/Functional/app" />
   </php>
 
   <filter>
@@ -16,9 +16,9 @@
       <directory>./</directory>
       <exclude>
         <directory>./Resources</directory>
-        <directory>./Tests</directory>
+        <directory>./tests</directory>
         <directory>./vendor</directory>
-        <directory>./Features</directory>
+        <directory>./features</directory>
       </exclude>
     </whitelist>
   </filter>
