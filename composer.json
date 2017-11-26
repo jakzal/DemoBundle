@@ -25,6 +25,9 @@
         "psr-4": { "Zalas\\Bundle\\DemoBundle\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Zalas\\Bundle\\DemoBundle\\Features\\": "features/" }
+        "psr-4": {
+            "Zalas\\Bundle\\DemoBundle\\Features\\": "features/",
+            "Zalas\\Bundle\\DemoBundle\\Tests\\": "tests/"
+        }
     }
 }
