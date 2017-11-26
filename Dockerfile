@@ -1,6 +1,5 @@
-FROM php:7.0
-
-MAINTAINER Jakub Zalas <jakub@zalas.pl>
+FROM composer
+FROM php:7.1
 
 RUN buildDeps="zlib1g-dev libicu-dev" \
     && apt-get update && apt-get install --no-install-recommends -y git libicu52 $buildDeps && rm -r /var/lib/apt/lists/* \
