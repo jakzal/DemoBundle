@@ -13,9 +13,9 @@
 
   <filter>
     <whitelist>
-      <directory>./</directory>
+      <directory>./src</directory>
       <exclude>
-        <directory>./Resources</directory>
+        <directory>./src/Resources</directory>
         <directory>./tests</directory>
         <directory>./vendor</directory>
         <directory>./features</directory>
