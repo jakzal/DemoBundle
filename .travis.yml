@@ -6,16 +6,12 @@ cache:
   directories:
     - $HOME/.composer/cache/files
 
-php:
-  - 5.6
-  - 7.0
-  - 7.1
-
 matrix:
-  fast_finish: true
   include:
     - php: 7.1
+    - php: 7.2
       env: deps=low
+  fast_finish: true
 
 before_script:
   - phpenv config-rm xdebug.ini
