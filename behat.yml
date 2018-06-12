@@ -9,8 +9,7 @@ default:
       kernel:
         env: test
         debug: true
-        path: features/Fixtures/Project/app/AppKernel.php
-        bootstrap: vendor/autoload.php
+        class: Zalas\Bundle\DemoBundle\Features\Fixtures\AppKernel
     Behat\MinkExtension:
       base_url: 'http://www.acme.dev/app_test.php/'
       sessions:

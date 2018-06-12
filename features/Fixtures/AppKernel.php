@@ -1,10 +1,17 @@
 <?php
 
+namespace Zalas\Bundle\DemoBundle\Features\Fixtures;
+
+use Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle;
+use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
+use Symfony\Bundle\MonologBundle\MonologBundle;
+use Symfony\Bundle\TwigBundle\TwigBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Routing\RouteCollectionBuilder;
+use Zalas\Bundle\DemoBundle\ZalasDemoBundle;
 
 class AppKernel extends Kernel
 {
@@ -16,11 +23,11 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
         return [
-            new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-            new Symfony\Bundle\TwigBundle\TwigBundle(),
-            new Symfony\Bundle\MonologBundle\MonologBundle(),
-            new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new Zalas\Bundle\DemoBundle\ZalasDemoBundle(),
+            new FrameworkBundle(),
+            new TwigBundle(),
+            new MonologBundle(),
+            new SensioFrameworkExtraBundle(),
+            new ZalasDemoBundle(),
         ];
     }
 
